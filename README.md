@@ -1,4 +1,4 @@
-# Fantastic Microsoft Edge Annoyances and How to Disable Them
+# Fantastic Microsoft Edge Annoyances and Where to Disable Them
 I needed to use Edge for something recently and was annoyed at how much sheer amounts of worthless junk settings that are enabled by default. I figured I'd chronicle all the stuff I disabled for reference.
 
 If you are forced to use Edge over Firefox, I hope you find the following modest list of annoying default settings helpful. Almost all of these should be turned off if you value privacy, security, and a browser that performs the sole purpose of browsing without any other nonsense.
