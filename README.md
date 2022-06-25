@@ -3,6 +3,8 @@ I needed to use Edge for something recently and was annoyed at the sheer volume 
 
 If you are forced to use Edge over Firefox, I hope you find the following modest list of annoying default settings helpful. Almost all of these should be turned off if you value privacy, security, and a browser that performs the sole purpose of browsing without any other nonsense.
 
+#### It is worth nothing that I omitted a select few settings that some may wish to disable. Please be aware of this and make any adjustments in accordance with your own personal preferences.
+
 ## Last updated 2022-06-08, version 102.0.1245.33 (Official build) (64-bit)
 
 ### Validated on Windows. Untested on Linux/macOS/mobile operating systems.
