@@ -37,6 +37,8 @@ If you are forced to use Edge over Firefox, I hope you find the following modest
 	* Disable "Save time and money with Shopping in Microsoft Edge"
 	* Disable "Get notifications of related things you can explore with Discover"
 	* Address bar and search -> Search engine used in the address bar = DuckDuckGo
+    * Security
+    	* Disable "Turn on site safety features to get more info about the sites you visit"
     * Search and service improvement
         * Uncheck "Help improve Microsoft products by sending the results from searches on the web"
 	* Personalize your web experience 
