@@ -5,7 +5,7 @@ If you are forced to use Edge over Firefox, I hope you find the following modest
 
 #### It is worth nothing that I omitted a select few settings that some may wish to disable. Please be aware of this and make any adjustments in accordance with your own personal preferences.
 
-## Last updated 2022-06-08, version 102.0.1245.33 (Official build) (64-bit)
+## Last updated 2022-11-23, version 107.0.1418.52 (Official build) (64-bit)
 
 ### Validated on Windows. Untested on Linux/macOS/mobile operating systems.
 
@@ -16,6 +16,8 @@ If you are forced to use Edge over Firefox, I hope you find the following modest
 ### Profiles
 * Sync
     * Turn off sync
+* Microsoft Rewards
+    * Turn off "Earn Microsoft Rewards in Microsoft Edge"
 * Personal info
     * Uncheck "Save and fill basic info"
 	* Uncheck "save and fill custom info"
@@ -29,7 +31,12 @@ If you are forced to use Edge over Firefox, I hope you find the following modest
     * Privacy
         * Uncheck "Allow sites to check if you have payment methods saved"
     * Services
-        * Disable all under "Services" - this is junk like coupons, nonprofit stuff, etc.
+        * Disable all under "Services" - this is junk like coupons, Shopping, nonprofit stuff, etc.
+	* Disable "Use a web service to help resolve navigation errors"
+	* Disable "Suggest similar sites when a website can't be found"
+	* Disable "Save time and money with Shopping in Microsoft Edge"
+	* Disable "Get notifications of related things you can explore with Discover"
+	* Address bar and search -> Search engine used in the address bar = DuckDuckGo
     * Search and service improvement
         * Uncheck "Help improve Microsoft products by sending the results from searches on the web"
 	* Personalize your web experience 
@@ -47,7 +54,10 @@ If you are forced to use Edge over Firefox, I hope you find the following modest
 	* Uncheck "Use writing assistance"
 * System and performance
 	* System
-        * Uncheck "Continue running background extensions and apps when Microsoft Edge is closed"
+        * Uncheck "Startup boost"
+	* Uncheck "Continue running background extensions and apps when Microsoft Edge is closed"
+	* Optimize Performance
+	* Uncheck "Improve your PC gaming experience with efficiency mode"
 
 
 Check out [Hope This Helps](https://hthpc.com/) if you liked this!
