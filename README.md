@@ -58,6 +58,7 @@ If you are forced to use Edge over Firefox, I hope you find the following modest
 	* Uncheck "Continue running background extensions and apps when Microsoft Edge is closed"
 	* Optimize Performance
 	* Uncheck "Improve your PC gaming experience with efficiency mode"
-
+* General Misc
+	* Hide the right-hand sidebar with CTRL + Shift / or by going to the "..." menu and selecting "hide sidebar"
 
 Check out [Hope This Helps](https://hthpc.com/) if you liked this!
