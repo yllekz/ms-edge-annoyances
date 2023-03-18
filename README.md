@@ -1,11 +1,11 @@
 # Fantastic Microsoft Edge Annoyances and Where to Disable Them
 I needed to use Edge for something recently and was annoyed at the sheer volume of worthless junk settings that are enabled by default. I figured I'd chronicle all the stuff I disabled for reference.
 
-If you are forced to use Edge over Firefox, I hope you find the following modest list of annoying default settings helpful. Almost all of these should be turned off if you value privacy, security, and a browser that performs the sole purpose of browsing without any other nonsense.
+If you are forced to use Edge over Firefox, I hope you find the following modest list of annoying default settings helpful. Almost all of these should be turned off if you value privacy, security, and a browser that performs the sole purpose of browsing without any other [nonsense](https://thomask.sdf.org/blog/2023/03/18/the-dark-defaults-of-microsoft-edge.html).
 
 #### It is worth nothing that I omitted a select few settings that some may wish to disable. Please be aware of this and make any adjustments in accordance with your own personal preferences.
 
-## Last updated 2022-11-23, version 107.0.1418.52 (Official build) (64-bit)
+## Last updated 2023-03-18, version 111.0.1661.44 (Official build) (64-bit)
 
 ### Validated on Windows. Untested on Linux/macOS/mobile operating systems.
 
@@ -62,5 +62,14 @@ If you are forced to use Edge over Firefox, I hope you find the following modest
 	* Uncheck "Improve your PC gaming experience with efficiency mode"
 * General Misc
 	* Hide the right-hand sidebar with CTRL + Shift / or by going to the "..." menu and selecting "hide sidebar"
+* New Tab page
+    * At the "new tab" page, click the settings cog in the upper right and uncheck "show promoted links, "show greeting" and "new tab tips" as well as set "content" to "content off."
+* [Get rid of the Bing button in Edge using Registry Editor](https://techdows.com/2023/03/disable-or-remove-bing-button-microsoft-edge.html)
+    * Close Edge
+    * Use these PowerShell commands to create the key: 
+        * ``New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge" -type Directory``
+        * ``New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge" -Name "HubsSidebarEnabled" -Value 0 -PropertyType Dword -Force``
+    * If you left Edge open during this, visit ``edge://policy``, and click reload policies.
+    * A side-effect of this is you will get a "managed by your organization" notice in the Edge menu. This can be ignored.
 
 Check out [Hope This Helps](https://hthpc.com/) if you liked this!
