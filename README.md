@@ -64,12 +64,12 @@ If you are forced to use Edge over Firefox, I hope you find the following modest
 	* Hide the right-hand sidebar with CTRL + Shift / or by going to the "..." menu and selecting "hide sidebar"
 * New Tab page
     * At the "new tab" page, click the settings cog in the upper right and uncheck "show promoted links, "show greeting" and "new tab tips" as well as set "content" to "content off."
-* [Get rid of the Bing button in Edge using Registry Editor](https://techdows.com/2023/03/disable-or-remove-bing-button-microsoft-edge.html)
+* Get rid of the Bing button:
     * [If on the newest Edge](https://www.thurrott.com/cloud/web-browsers/microsoft-edge/281051/microsoft-now-lets-you-hide-the-bing-button-in-edge):
         * Settings -> Sidebar > App and notification settings > Discover -> Toggle off "Show Discover."
-    * If on older versions of Edge that have the button:
+    * [If on older versions of Edge that have the button](https://techdows.com/2023/03/disable-or-remove-bing-button-microsoft-edge.html):
         * Close Edge
-        * Use these PowerShell commands to create the key: 
+        * Use these PowerShell commands to create the key (run PowerShell as administrator): 
             * ``New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge" -type Directory``
             * ``New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge" -Name "HubsSidebarEnabled" -Value 0 -PropertyType Dword -Force``
         * If you left Edge open during this, visit ``edge://policy``, and click reload policies.
