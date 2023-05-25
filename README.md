@@ -5,7 +5,7 @@ If you are forced to use Edge over Firefox, I hope you find the following modest
 
 #### It is worth nothing that I omitted a select few settings that some may wish to disable. Please be aware of this and make any adjustments in accordance with your own personal preferences.
 
-## Last updated 2023-03-18, version 111.0.1661.44 (Official build) (64-bit)
+## Last updated 2023-05-25, version 113.0.1774.50 (Official build) (64-bit)
 
 ### Validated on Windows. Untested on Linux/macOS/mobile operating systems.
 
@@ -41,7 +41,7 @@ If you are forced to use Edge over Firefox, I hope you find the following modest
     	* Disable "Turn on site safety features to get more info about the sites you visit"
     * Search and service improvement
         * Uncheck "Help improve Microsoft products by sending the results from searches on the web"
-	* Personalize your web experience 
+	* Personalize your web experience
         * Uncheck "Improve your web experience by allowing Microsoft to use your browsing history from this account for personalizing advertising, search, news and other Microsoft services"
         * Address bar and search
             * Uncheck "Show me search and site suggestions using my typed characters"
@@ -69,10 +69,31 @@ If you are forced to use Edge over Firefox, I hope you find the following modest
         * Settings -> Sidebar > App and notification settings > Discover -> Toggle off "Show Discover."
     * [If on older versions of Edge that have the button](https://techdows.com/2023/03/disable-or-remove-bing-button-microsoft-edge.html):
         * Close Edge
-        * Use these PowerShell commands to create the key (run PowerShell as administrator): 
-            * ``New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge" -type Directory``
-            * ``New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge" -Name "HubsSidebarEnabled" -Value 0 -PropertyType Dword -Force``
-        * If you left Edge open during this, visit ``edge://policy``, and click reload policies.
-        * A side-effect of this is you will get a "managed by your organization" notice in the Edge menu. This can be ignored.
+        * Use these PowerShell commands to create the key (run PowerShell as administrator):
+            * If you want to make this a mandatory (cannot disable) setting:
+                * ``New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge" -type Directory``
+                * ``New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge" -Name "HubsSidebarEnabled" -Value 0 -PropertyType Dword -Force``
+                * If you left Edge open during this, visit ``edge://policy``, and click reload policies.
+                * A side-effect of this is you will get a "managed by your organization" notice in the Edge menu. This can be ignored.
+            * If you want to make this an default-but-revertable setting:
+            * ``New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge\Recommended" -type Directory``
+            * ``New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge\Recommended" -Name "HubsSidebarEnabled" -Value 0 -PropertyType Dword -Force``
+* Disable first run experience:
+    * Use these PowerShell commands to create the key (run PowerShell as administrator):
+        * ``New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge" -type Directory``
+        * ``New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge\Recommended" -type Directory``
+        * ``New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge" -Name "HideFirstRunExperience" -Value 1 -PropertyType Dword -Force``
+* Disable default browser prompt:
+    * Use these PowerShell commands to create the key (run PowerShell as administrator):
+        * ``New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge" -type Directory``
+        * ``New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge" -Name "DefaultBrowserSettingEnabled" -Value 0 -PropertyType Dword -Force``
+* Set home page to blank:
+    * Use these PowerShell commands to create the key (run PowerShell as administrator):
+        * ``New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge\Recommended" -type Directory``
+        * ``New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge\Recommended" -Name "HomepageLocation" -Value "about:blank" -PropertyType String -Force``
+* Set new tab page to blank:
+    * Use these PowerShell commands to create the key (run PowerShell as administrator):
+        * ``New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge\Recommended" -type Directory``
+        * ``New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge\Recommended" -Name "NewTabPageLocation" -Value "about:blank" -PropertyType String -Force``
 
 Check out [Hope This Helps](https://hthpc.com/) if you liked this!
