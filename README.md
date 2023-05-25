@@ -76,8 +76,8 @@ If you are forced to use Edge over Firefox, I hope you find the following modest
                 * If you left Edge open during this, visit ``edge://policy``, and click reload policies.
                 * A side-effect of this is you will get a "managed by your organization" notice in the Edge menu. This can be ignored.
             * If you want to make this an default-but-revertable setting:
-            * ``New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge\Recommended" -type Directory``
-            * ``New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge\Recommended" -Name "HubsSidebarEnabled" -Value 0 -PropertyType Dword -Force``
+                * ``New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge\Recommended" -type Directory``
+                * ``New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge\Recommended" -Name "HubsSidebarEnabled" -Value 0 -PropertyType Dword -Force``
 * Disable first run experience:
     * Use these PowerShell commands to create the key (run PowerShell as administrator):
         * ``New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge" -type Directory``
