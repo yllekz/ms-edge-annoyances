@@ -70,7 +70,7 @@ If you are forced to use Edge over Firefox, I hope you find the following modest
     * [If on older versions of Edge that have the button](https://techdows.com/2023/03/disable-or-remove-bing-button-microsoft-edge.html):
         * Close Edge
         * Use these PowerShell commands to create the key (run PowerShell as administrator):
-            * If you want to make this a mandatory (cannot disable) setting:
+            * If you want to make this mandatory (cannot change setting without reg key removal):
                 * ``New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge" -type Directory``
                 * ``New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge" -Name "HubsSidebarEnabled" -Value 0 -PropertyType Dword -Force``
                 * If you left Edge open during this, visit ``edge://policy``, and click reload policies.
@@ -81,7 +81,6 @@ If you are forced to use Edge over Firefox, I hope you find the following modest
 * Disable first run experience:
     * Use these PowerShell commands to create the key (run PowerShell as administrator):
         * ``New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge" -type Directory``
-        * ``New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge\Recommended" -type Directory``
         * ``New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge" -Name "HideFirstRunExperience" -Value 1 -PropertyType Dword -Force``
 * Disable default browser prompt:
     * Use these PowerShell commands to create the key (run PowerShell as administrator):
