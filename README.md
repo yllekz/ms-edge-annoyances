@@ -5,7 +5,7 @@ If you are forced to use Edge over Firefox, I hope you find the following modest
 
 #### It is worth nothing that I omitted a select few settings that some may wish to disable. Please be aware of this and make any adjustments in accordance with your own personal preferences.
 
-## Last updated 2023-05-25, version 113.0.1774.50 (Official build) (64-bit)
+## Last updated 2024-07-16, Version 126.0.2592.102 (Official build) (64-bit)
 
 ### Validated on Windows. Untested on Linux/macOS/mobile operating systems.
 
@@ -14,31 +14,43 @@ If you are forced to use Edge over Firefox, I hope you find the following modest
 ## Settings
 
 ### Profiles
-* Sync
-    * Turn off sync
-* Microsoft Rewards
-    * Turn off "Earn Microsoft Rewards in Microsoft Edge"
-* Personal info
-    * Uncheck "Save and fill basic info"
-	* Uncheck "save and fill custom info"
-* Payment info
-    * Turn off "Save and fill payment info"
-* 	Profile preferences
-    * Uncheck "Allow single sign-on for work or school sites using this profile"
-* Share browsing data with other Windows features
-    * Uncheck "Share browsing data with other Windows features"
+* Profile Settings
+    * Sync
+        * Turn off sync [Important: It seems that sync may get re-enabled without your consent so you will need to continually check it]
+    * Microsoft Rewards
+        * Turn off "Earn Microsoft Rewards in Microsoft Edge"
+    * Profile preferences
+        * Uncheck "Allow single sign-on for work or school sites using this profile"
+    * Share Browsing Data with other Windows Features
+        * Uncheck "Share browsing data with other Windows features"
+    * Microsoft Wallet -> Settings
+        * Payment methods
+            * Uncheck "Save and fill basic info"
+            * Uncheck "Show Buy now, pay later option on sites when you shop"
+            * Uncheck "Show Express checkout on sites when you shop"
+        * Order tracking
+            * Uncheck "Track your oder status"
+        * Personal Info
+            * Uncheck "save and fill custom info"
+            * Uncheck "Automatically fill my info on sign up forms"
+        * Memberships
+            * Uncheck "Save and fill memberships"
+        * Tickets
+            * Uncheck "Display your travel reservation data from Bing"
+        * Donation
+            * Uncheck "Show opportunities to support causes and nonprofits you care about"
+        * E-tree
+            * Uncheck "Show E-tree in Wallet"
 * Privacy, search, and services
     * Privacy
         * Uncheck "Allow sites to check if you have payment methods saved"
     * Services
-        * Disable all under "Services" - this is junk like coupons, Shopping, nonprofit stuff, etc.
-	* Disable "Use a web service to help resolve navigation errors"
-	* Disable "Suggest similar sites when a website can't be found"
-	* Disable "Save time and money with Shopping in Microsoft Edge"
-	* Disable "Get notifications of related things you can explore with Discover"
-	* Address bar and search -> Search engine used in the address bar = DuckDuckGo
-    * Security
-    	* Disable "Turn on site safety features to get more info about the sites you visit"
+        * You can effectively disable everything here, this is all junk like coupons, Shopping, nonprofit stuff, etc.
+	    * Disable "Use a web service to help resolve navigation errors"
+	    * Disable "Suggest similar sites when a website can't be found"
+	    * Disable "Save time and money with Shopping in Microsoft Edge"
+	    * Disable "Get notifications of related things you can explore with Discover"
+	    * Address bar and search -> Search engine used in the address bar = DuckDuckGo
     * Search and service improvement
         * Uncheck "Help improve Microsoft products by sending the results from searches on the web"
 	* Personalize your web experience
@@ -62,6 +74,14 @@ If you are forced to use Edge over Firefox, I hope you find the following modest
 	* Uncheck "Improve your PC gaming experience with efficiency mode"
 * General Misc
 	* Hide the right-hand sidebar with CTRL + Shift / or by going to the "..." menu and selecting "hide sidebar"
+* Sidebar
+    * Uncheck "Always show sidebar"
+    * Uncheck "personalize my top sites in customize sidebar"
+    * Uncheck "allow sidebar apps to show notifications"
+    * Uncheck Copilot
+* Languages
+    * Uncheck "Collaborate with Copilot as you write on the web"
+    * Uncheck "Use text prediction"
 * New Tab page
     * At the "new tab" page, click the settings cog in the upper right and uncheck "show promoted links, "show greeting" and "new tab tips" as well as set "content" to "content off."
 * Get rid of the Bing button:
